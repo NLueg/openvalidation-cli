@@ -1,0 +1,18 @@
+{
+  "name": "openvalidation",
+  "version": "0.0.1",
+  "description": "script-package for openvalidation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "openvalidation",
+  "license": "MIT",
+  "bin": {
+    "openvalidation": "./cli.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-jre": "^0.2.3"
+  }
+}
