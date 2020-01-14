@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "prepare": "npm run clean && npm run build"
   },
   "author": "openvalidation",
   "license": "MIT",
@@ -15,7 +16,10 @@
   "dependencies": {
     "@types/node": "^13.1.6",
     "express": "^4.17.1",
-    "node-java-connector": "0.0.2",
+    "node-java-connector": "^0.1.1",
     "typescript": "^3.7.4"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0"
   }
 }
