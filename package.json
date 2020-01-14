@@ -4,15 +4,18 @@
   "description": "script-package for openvalidation",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "openvalidation",
   "license": "MIT",
   "bin": {
-    "openvalidation": "./cli.js"
+    "openvalidation": "./dist/cli.js"
   },
   "dependencies": {
+    "@types/node": "^13.1.6",
     "express": "^4.17.1",
-    "node-jre": "^0.2.3"
+    "node-java-connector": "0.0.2",
+    "typescript": "^3.7.4"
   }
 }
